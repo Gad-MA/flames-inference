@@ -13,6 +13,7 @@ pip install -e .
 ## Usage
 
 ```bash
+export MPLBACKEND=Agg
 flames-inference --input <input_folder_with_nifti_images> --output <output_folder>
 ```
 
