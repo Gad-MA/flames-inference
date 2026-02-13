@@ -1,0 +1,2 @@
+[console_scripts]
+flames-inference = flames_inference.cli:main

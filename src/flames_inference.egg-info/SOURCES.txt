@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/flames_inference/__init__.py
+src/flames_inference/cli.py
+src/flames_inference/inference.py
+src/flames_inference/preprocessing.py
+src/flames_inference/utils.py
+src/flames_inference.egg-info/PKG-INFO
+src/flames_inference.egg-info/SOURCES.txt
+src/flames_inference.egg-info/dependency_links.txt
+src/flames_inference.egg-info/entry_points.txt
+src/flames_inference.egg-info/requires.txt
+src/flames_inference.egg-info/top_level.txt
