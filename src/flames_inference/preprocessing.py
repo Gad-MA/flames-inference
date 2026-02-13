@@ -56,9 +56,7 @@ def batch_synthstrip(input_dir, output_dir, use_gpu=True):
 
     for f in files:
         filename = os.path.basename(f)
-        # Output filename as per notebook: stripped{filename} or we can keep it clean
-        # Notebook used: strippedpatient...
-        output_filename = f"stripped_{filename}"
+        output_filename = f"{filename}"
         output_path = os.path.join(output_dir, output_filename)
 
         cmd = [
