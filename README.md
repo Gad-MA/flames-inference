@@ -5,6 +5,8 @@ FLAIR Lesion Analysis in Multiple Sclerosis inference pipeline.
 ## Installation
 
 ```bash
+git clone https://github.com/Gad-MA/flames-inference.git
+cd flames-inference
 pip install -e .
 ```
 
