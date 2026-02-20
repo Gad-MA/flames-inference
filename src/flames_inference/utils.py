@@ -1,6 +1,5 @@
 import os
 import torch
-import re
 
 def check_gpu():
     """Checks if GPU is available."""
@@ -20,20 +19,3 @@ def set_env_vars(base_dir):
     for key in ["nnUNet_raw", "nnUNet_preprocessed", "nnUNet_results"]:
         os.makedirs(os.environ[key], exist_ok=True)
         print(f"Set {key}={os.environ[key]}")
-
-def validate_filename(filename):
-    """
-    Validates if the given filename follows the format `CASE_IDENTIFIER_0000.nii.gz`.
-
-    Args:
-        filename (str): The filename to validate.
-
-    Returns:
-        bool: True if the filename is valid, False otherwise.
-    """
-    pattern = r"^[a-zA-Z0-9]+_[0-9]+_0000\.nii\.gz$"
-    return bool(re.match(pattern, filename))
-
-# Example usage:
-# print(validate_filename("brain_001_0000.nii.gz"))  # True
-# print(validate_filename("invalid_name.nii.gz"))    # False

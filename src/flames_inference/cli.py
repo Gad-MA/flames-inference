@@ -2,7 +2,7 @@ import argparse
 import os
 import sys
 from pathlib import Path
-from .utils import check_gpu, set_env_vars, validate_filename
+from .utils import check_gpu, set_env_vars
 from .preprocessing import batch_synthstrip
 from .inference import download_model, install_model, run_inference
 
@@ -42,18 +42,6 @@ def main():
     # Let's use a subdirectory in output_dir for 'nnUNet_work_dir' to keep things organized.
     work_dir = os.path.join(output_dir, "work_dir")
     set_env_vars(work_dir)
-    
-    # Validate filenames in the input directory
-    print("\nValidating input filenames...")
-    invalid_files = [f for f in os.listdir(input_dir) if not validate_filename(f)]
-    if invalid_files:
-        print("Error: The following files do not follow the required naming format `CASE_IDENTIFIER_0000.nii.gz`:")
-        for file in invalid_files:
-            print(f"  - {file}")
-        print("Example valid input image names: \n - `brain_001_0000.nii.gz` \n - `brain_002_0000.nii.gz`")
-        sys.exit(1)
-    else:
-        print("All input filenames are valid.")
     
     # 1. Preprocessing
     if args.skip_preprocessing:
