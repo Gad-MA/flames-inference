@@ -1,6 +1,8 @@
 # FLAMeS Inference
 
-FLAIR Lesion Analysis in Multiple Sclerosis inference pipeline.
+This package reduces the complexity of using FLAMeS, a model for multiple sclerosis lesion segmentation from a single FLAIR image, into one intuitive command.
+
+[FLAMeS official website](https://zenodo.org/records/17955359]).
 
 ## Installation
 
