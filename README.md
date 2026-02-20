@@ -29,7 +29,14 @@ export MPLBACKEND=Agg
 flames-inference --input <input_folder_with_nifti_images> --output <output_folder>
 ```
 
+## Using Google Colab
+
+If you use colab, check the "FLAMeS_Inference_in_Colab.ipynb" notebook for detailed instructions.
+
 ## Help
+
+Run the following command to view all available options and capabilities:
+
 ```bash
 flames-inference --help
 ```
