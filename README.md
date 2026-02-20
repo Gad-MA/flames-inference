@@ -31,7 +31,7 @@ flames-inference --input <input_folder_with_nifti_images> --output <output_folde
 
 ## Using Google Colab
 
-If you use colab, check the "FLAMeS_Inference_in_Colab.ipynb" notebook for detailed instructions.
+If you use colab, check the "[FLAMeS_Inference_in_Colab.ipynb](https://github.com/Gad-MA/flames-inference/blob/main/FLAMeS_Inference_in_Colab.ipynb)" notebook for detailed instructions.
 
 ## Help
 
